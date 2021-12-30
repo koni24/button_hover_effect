@@ -1,0 +1,77 @@
+button{
+    position: relative;
+    border: none;
+    transition: .4s ease-in;
+    z-index: 1;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+}
+button::before,
+button::after{
+    position: absolute;
+    content: "";
+    z-index: -1;
+}
+.btn1:hover{
+    box-shadow: inset -12em 0 0 0 #ff96ad, inset 12em 0 0 0 #ff96ad;
+}
+.btn2::after{
+    background: #ff96ad;
+    height: 0;
+    left: 0;
+    top: 0;
+    transition-duration: 0.6s;
+    width: 100%;
+}
+.btn2:hover::after{
+    height: 100%;
+
+}
+.btn3::after{
+    background: #ff96ad;
+    height: 0;
+    left: 0;
+    bottom: 0;
+    transition-duration: 0.6s;
+    width: 100%;
+}
+.btn3:hover::after{
+    height: 100%;
+
+}
+.btn4:hover{
+    background: #ff96ad;
+    box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px #ff96ad, 0 0 200px #ff96ad;
+}
+.btn5:hover{
+    box-shadow: 10px 10px 0px #ff96ad;
+    top: -5px;
+    left: -5px;
+}
+.btn6::after{
+    background: #ff96ad;
+    height: 100%;
+    left: -35%;
+    top: 0;
+    transform: skew(50deg);
+    transition-duration: 0.6s;
+    transform-origin: top left;
+    width: 0;
+}
+.btn6:hover:after{
+    height: 100%;
+    width: 135%;
+}
+.btn7:hover{
+    box-shadow: inset 22.5em 0 0 0 #ff96ad;
+}
+.btn7:hover::after{
+    background: #ff96ad;
+    width: 100%;
+}
+.btn8:hover{
+    border: 5px solid #ff96ad;
+    color: #ff96ad;
+    background-color: #17181c;
+}
